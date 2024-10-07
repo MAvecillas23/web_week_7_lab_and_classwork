@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where is the ISS?</title>
+
+<!--  leaflet css and js links for map-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+
+<!--  linking to our own style sheet-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+<!--    need this to connect for JS file-->
+    <script async defer src='fetch.js'></script>
+</head>
+<body>
+
+    <h1>Where is the ISS?</h1>
+
+<!--    This div will hold the coordinates for the ISS location in longitude and latitude-->
+    <div>
+        <p id="time"></p>
+        <p>ISS Latitude: <span id="iss-lat"></span></p>
+        <p>ISS Longitude: <span id="iss-long"></span></p>
+    </div>
+
+<!--    div for iss map location-->
+    <div id="iss-map"></div>
+
+<!--    add attribution for icon -->
+    <p>Icon by iss Viktor Korobkov from the Noun Project</p>
+
+</body>
+</html>
